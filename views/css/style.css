@@ -505,6 +505,12 @@ footer {
     display: flex;
   }
   
+  .desc,
+  .rooms-show,
+  .desc-name p {
+    display: none;
+  }
+
   .room1 {
     background-image: url(/img/room1.jpg);
     background-position: center;
