@@ -7,7 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Colorbox by Jack Moore -->
+  <script src="js/jquery.colorbox.js"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+   <!-- Colorbox by Jack Moore -->
+  <link href="css/colorbox.css" rel="stylesheet">
 </head>
 <body>
 <nav id="main-nav">
@@ -32,10 +37,10 @@
       <div class="room-box room1">
         <div class="desc-name"><h3>Room 1 </h3> <p>  (30 m&sup2)</p></div>
         <div class="rooms-show">
-            <img src="/img/room1.jpg" alt="">
-            <img src="/img/room3.jpg" alt="">
-            <img src="/img/appt2.jpg" alt="">
-            <img src="/img/appt1.jpg" alt="">
+            <div><a href="/img/room1.jpg" class="group1" title="Room 1"><img src="/img/room1.jpg" alt=""></a></div> 
+            <div><a href="/img/room3.jpg" class="group1" title="Room 1"><img src="/img/room3.jpg" alt=""></a></div>
+            <div><a href="/img/appt2.jpg" class="group1" title="Room 1"><img src="/img/appt2.jpg" alt=""></a></div>
+            <div><a href="/img/appt1.jpg" class="group1" title="Room 1"><img src="/img/appt1.jpg" alt=""></a></div>
         </div>
         <div class="desc">
           <ul>  
@@ -49,10 +54,10 @@
       <div class="room-box room2">
           <div class="desc-name"><h3>Room 2 </h3> <p>  (40-55 m&sup2)</p></div>
           <div class="rooms-show">
-              <img src="/img/appt3.jpg" alt="">
-              <img src="/img/room2.jpg" alt="">
-              <img src="/img/room1.jpg" alt="">
-              <img src="/img/room3.jpg" alt="">
+              <div><a href="/img/appt3.jpg" class="group2" title="Room 2"><img src="/img/appt3.jpg" alt=""></a></div>
+              <div><a href="/img/room2.jpg" class="group2" title="Room 2"><img src="/img/room2.jpg" alt=""></a></div>
+              <div><a href="/img/room1.jpg" class="group2" title="Room 2"><img src="/img/room1.jpg" alt=""></a></div>
+              <div><a href="/img/room3.jpg" class="group2" title="Room 2"><img src="/img/room3.jpg" alt=""></a></div>
           </div>
           <div class="desc">
               <ul>  
@@ -67,10 +72,10 @@
       <div class="room-box room3">
           <div class="desc-name"><h3>Room 3 </h3> <p>  (50-60 m&sup2)</p></div>
           <div class="rooms-show">
-              <img src="/img/room3.jpg" alt="">
-              <img src="/img/room1.jpg" alt="">
-              <img src="/img/room2.jpg" alt="">
-              <img src="/img/appt3.jpg" alt="">
+            <div><a href="/img/room3.jpg" class="group3" title="Room 3"><img src="/img/room3.jpg" alt=""></a></div>
+            <div><a href="/img/room1.jpg" class="group3" title="Room 3"><img src="/img/room1.jpg" alt=""></a></div>
+            <div><a href="/img/room2.jpg" class="group3" title="Room 3"><img src="/img/room2.jpg" alt=""></a></div>
+            <div><a href="/img/appt3.jpg" class="group3" title="Room 3"><img src="/img/appt3.jpg" alt=""></a></div>
           </div>
           <div class="desc">
               <ul>  
@@ -86,10 +91,10 @@
     <div class="apart-box appt1">
         <div class="desc-name"><h3>Apartment 1 </h3> <p>  (100 m&sup2)</p></div>
       <div class="rooms-show">
-          <img src="/img/appt0.jpg" alt="">
-          <img src="/img/appt6.jpg" alt="">
-          <img src="/img/appt3.jpg" alt="">
-          <img src="/img/appt5.jpg" alt="">
+        <div><a href="/img/appt0.jpg" class="group4" title="Apartment 1"><img src="/img/appt0.jpg" alt=""></a></div>
+        <div><a href="/img/appt6.jpg" class="group4" title="Apartment 1"><img src="/img/appt6.jpg" alt=""></a></div>
+        <div><a href="/img/appt3.jpg" class="group4" title="Apartment 1"><img src="/img/appt3.jpg" alt=""></a></div>
+        <div><a href="/img/appt5.jpg" class="group4" title="Apartment 1"><img src="/img/appt5.jpg" alt=""></a></div>
       </div>
       <div class="desc">
           <ul>  
@@ -104,10 +109,10 @@
     <div class="apart-box appt2">
         <div class="desc-name"><h3>Apartment 2 </h3> <p>  (160 m&sup2)</p></div>
         <div class="rooms-show">
-            <img src="/img/appt1.jpg" alt="">
-            <img src="/img/appt2.jpg" alt="">
-            <img src="/img/appt4.jpg" alt="">
-            <img src="/img/appt3.jpg" alt="">
+          <div><a href="/img/appt1.jpg" class="group5" title="Apartment 2"><img src="/img/appt1.jpg" alt=""></a></div>
+          <div><a href="/img/appt2.jpg" class="group5" title="Apartment 2"><img src="/img/appt2.jpg" alt=""></a></div>
+          <div><a href="/img/appt4.jpg" class="group5" title="Apartment 2"><img src="/img/appt4.jpg" alt=""></a></div>
+          <div><a href="/img/appt3.jpg" class="group5" title="Apartment 2"><img src="/img/appt3.jpg" alt=""></a></div>
         </div>
         <div class="desc">
             <ul>  
@@ -238,6 +243,14 @@
   // The marker, position center
   var marker = new google.maps.Marker({position: mgps, map: map});
 }
+$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+        $(".group1").colorbox({rel:'group1', transition:"fade", height:"75%"});
+        $(".group2").colorbox({rel:'group2', transition:"fade", height:"75%"});
+        $(".group3").colorbox({rel:'group3', transition:"fade", height:"75%"});
+        $(".group4").colorbox({rel:'group4', transition:"fade", height:"75%"});
+        $(".group5").colorbox({rel:'group5', transition:"fade", height:"75%"});
+			});
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVnDNpTdDjjrGAi5-jUXyCVkcqSYyb6d4&callback=initMap"></script>
 </body>
